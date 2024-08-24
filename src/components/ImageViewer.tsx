@@ -1,10 +1,10 @@
-import { ReactElement, useEffect, useState, useRef, ReactNode, MouseEvent, TouchEvent } from 'react';
+import React, { ReactElement, useEffect, useState, useRef, ReactNode, MouseEvent, TouchEvent } from 'react';
 import css from './ImageViewerCSS.module.css';
 import { Forward, Add, Remove, Close } from '@mui/icons-material/';
 import { Button } from '@mui/material';
-import { ImageViewerI, operationI, comparisonI, currentZoomI } from './interfaces';
+import { ImageViewerI, operationI, comparisonI, currentZoomI } from '../interfaces/interfaces';
 
-function ImageViewer({ images, index, setShowImageViewer, controlsOutside }: ImageViewerI): ReactElement {
+const ImageViewer = ({ images, index, setShowImageViewer, controlsOutside }: ImageViewerI): ReactElement => {
 
   let clickOnBG = useRef({ // CLICK ON BACKGROUND MODAL
     start: false, // CLICK BEGINS ON BG MODAL
@@ -16,13 +16,13 @@ function ImageViewer({ images, index, setShowImageViewer, controlsOutside }: Ima
     if (canvas !== null) canvas.onmouseout = function() { allowMove.current = false }
   }, [])
 
-  window.onmousedown = function(e) {
+  window.onmousedown = function(e: Event) {
     let modalDiv = document.getElementById('modalBackground');
     if (e.target === modalDiv) clickOnBG.current.start =  true
     else clickOnBG.current.start =  false
   }
 
-  window.onmouseup = function(e) {
+  window.onmouseup = function(e: Event) {
     let modalDiv = document.getElementById('modalBackground');
     if (e.target === modalDiv) clickOnBG.current.end =  true
     else clickOnBG.current.end =  false
