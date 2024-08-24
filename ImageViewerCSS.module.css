@@ -1,0 +1,99 @@
+.modalBackground {
+  /* background: green; */ /* DEV */
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.4); /* AROUND IMAGE */
+  z-index: 1000000; /* MORE THAN APP GRAY STRIPS */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.innerModal {
+  /* background: orange; */ /* DEV */
+  background: gray;
+  display: flex;
+  position: relative;
+  width: 80vw !important;
+  height: 70vh !important;
+  justify-content: center;
+}
+
+.canvasImage {
+  /* background: red; */ /* DEV */
+  object-fit: contain;
+  max-width: 80vw;
+  max-height: 70vh;
+}
+
+.bottomBar {
+  /* background: green; */ /* DEV */
+  display: flex;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 100% !important;
+  background: rgba(0, 0, 0, 0.4);
+  justify-content: center;
+}
+
+.buttonsContainer {
+  display: flex;
+  position: relative;
+  /* background: red; */ /* DEV */
+}
+
+.zoomContainer {
+  /* background: blue; */ /* DEV */
+  width: 50px;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  right: -55px;
+  color: #fff;
+  height: 49px;
+}
+
+.imageCounter {
+  /* background: blue; */ /* DEV */
+  width: 70px;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  left: -75px;
+  color: #fff;
+  height: 49px;
+  justify-content: flex-end;
+}
+
+.button {
+  /* background: red !important; */ /* DEV */
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0vw !important;
+  min-width: 0vh !important;
+  width: 35px !important;
+  height: 35px !important;
+  margin: 7px 3.5px !important;
+}
+
+.icon {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  transform: rotate(180deg);
+  min-width: 0vh;
+  width: 23px !important;
+  height: 23px !important;
+}
+
+.right {
+  transform: scaleX(1);
+}
+

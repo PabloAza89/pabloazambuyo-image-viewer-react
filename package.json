@@ -1,0 +1,14 @@
+{
+  "name": "imageviewer-react",
+  "version": "1.0.0",
+  "description": "An Image Viewer for React",
+  "main": "index.tsx",
+  "author": "Juan Pablo Azambuyo",
+  "license": "ISC",
+  "dependencies": {
+    "@mui/icons-material": "^5.11.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "typescript": "^4.9.4"
+  }
+}
