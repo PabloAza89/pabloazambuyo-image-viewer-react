@@ -1,10 +1,12 @@
 {
-  "name": "imageviewer-react",
+  "name": "pabloazambuyo-image-viewer-react",
   "version": "1.0.0",
+  "type": "module",
   "description": "An Image Viewer for React",
+  "source": "index.tsx",
   "main": "index.tsx",
   "author": "Juan Pablo Azambuyo",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@mui/icons-material": "^5.11.0",
     "react": "^17.0.2",
